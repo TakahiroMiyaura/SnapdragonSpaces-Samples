@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: SpatialMesh-NonVisualize
-  m_Shader: {fileID: 4800000, guid: 95a1e08c5e35b467bbb21e2615a6c5a2, type: 3}
+  m_Shader: {fileID: 4800000, guid: 474abb23c60404bb4b4f6c0d924e8069, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4

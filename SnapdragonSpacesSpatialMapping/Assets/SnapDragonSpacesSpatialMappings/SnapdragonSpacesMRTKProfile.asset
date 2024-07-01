@@ -14,12 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCustomProfile: 0
   loadedSubsystems:
+  - reference: MixedReality.Toolkit.Input.MRTKHandsAggregatorSubsystem, MixedReality.Toolkit.Input
+  - reference: MixedReality.Toolkit.Input.OpenXRHandsSubsystem, MixedReality.Toolkit.Input
+  - reference: MixedReality.Toolkit.Input.SyntheticHandsSubsystem, MixedReality.Toolkit.Input
   - reference: Microsoft.MixedReality.Toolkit.Input.SyntheticHandsSubsystem, Microsoft.MixedReality.Toolkit.Input
   - reference: Microsoft.MixedReality.Toolkit.Input.OpenXRHandsSubsystem, Microsoft.MixedReality.Toolkit.Input
   - reference: Microsoft.MixedReality.Toolkit.Input.MRTKHandsAggregatorSubsystem,
       Microsoft.MixedReality.Toolkit.Input
   subsystemConfigs:
     entries:
+    - key:
+        reference: MixedReality.Toolkit.Input.SyntheticHandsSubsystem, MixedReality.Toolkit.Input
+      value: {fileID: 11400000, guid: c45788af2ca823a4a904bf8762ff126d, type: 2}
+    - key:
+        reference: MixedReality.Toolkit.Input.MRTKHandsAggregatorSubsystem, MixedReality.Toolkit.Input
+      value: {fileID: 11400000, guid: 90bcbda8ae72f94449e229a296b4e817, type: 2}
     - key:
         reference: Microsoft.MixedReality.Toolkit.Input.SyntheticHandsSubsystem,
           Microsoft.MixedReality.Toolkit.Input
@@ -28,4 +37,3 @@ MonoBehaviour:
         reference: Microsoft.MixedReality.Toolkit.Input.MRTKHandsAggregatorSubsystem,
           Microsoft.MixedReality.Toolkit.Input
       value: {fileID: 11400000, guid: 90bcbda8ae72f94449e229a296b4e817, type: 2}
-  <SpatializationMixer>k__BackingField: {fileID: 0}

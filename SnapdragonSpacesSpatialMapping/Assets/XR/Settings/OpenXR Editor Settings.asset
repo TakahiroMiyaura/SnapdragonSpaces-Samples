@@ -16,7 +16,9 @@ MonoBehaviour:
   Values:
   - featureSets:
     - com.qualcomm.snapdragon.spaces
+    - com.qualcomm.snapdragon.spaces.experimental
   - featureSets:
     - com.microsoft.openxr.featureset.wmr
   - featureSets:
     - com.microsoft.openxr.featureset.hololens
+  m_vulkanAdditionalGraphicsQueue: 0

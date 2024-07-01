@@ -2,8 +2,8 @@
 // Released under the MIT license
 // http://opensource.org/licenses/mit-license.php
 
-using Microsoft.MixedReality.Toolkit;
-using Microsoft.MixedReality.Toolkit.Subsystems;
+using MixedReality.Toolkit;
+using MixedReality.Toolkit.Subsystems;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.XR;

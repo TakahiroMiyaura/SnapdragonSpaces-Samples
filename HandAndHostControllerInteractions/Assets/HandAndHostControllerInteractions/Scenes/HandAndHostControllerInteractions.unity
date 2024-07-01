@@ -193,8 +193,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4220fa33d0e48745b2cb5c52731e75e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: a522d7149601c2642b1b5daf4fd94c40, type: 2}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.42075467, g: 0.57142323, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -253,6 +253,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 31
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -298,13 +299,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 142007140022173312, guid: 4d7e2f87fefe0ba468719b15288b46e7, type: 3}
+      propertyPath: m_ModelPrefab
+      value: 
+      objectReference: {fileID: -8679921383154817045, guid: ba7d82c8230bba148a0448874cca05cd, type: 3}
+    - target: {fileID: 2351505566903569412, guid: 4d7e2f87fefe0ba468719b15288b46e7, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2351505566903569412, guid: 4d7e2f87fefe0ba468719b15288b46e7, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2351505567455720332, guid: 4d7e2f87fefe0ba468719b15288b46e7, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2351505567455720332, guid: 4d7e2f87fefe0ba468719b15288b46e7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -369,6 +378,14 @@ PrefabInstance:
     - target: {fileID: 5870931076965904817, guid: 4d7e2f87fefe0ba468719b15288b46e7, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448619845270702420, guid: 4d7e2f87fefe0ba468719b15288b46e7, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7609097064974327368, guid: 4d7e2f87fefe0ba468719b15288b46e7, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d7e2f87fefe0ba468719b15288b46e7, type: 3}
@@ -706,7 +723,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3493013819197874656, guid: ad5b753b73e311143a85055b15cea562, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3493013819197874656, guid: ad5b753b73e311143a85055b15cea562, type: 3}
       propertyPath: m_LocalPosition.x
@@ -801,7 +818,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1611836158
 GameObject:
@@ -1553,7 +1570,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4994081171964106406, guid: 95254c59fadc7604fb7d6803bd47c09a, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4994081171964106406, guid: 95254c59fadc7604fb7d6803bd47c09a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1612,9 +1629,34 @@ PrefabInstance:
       propertyPath: Controller
       value: 
       objectReference: {fileID: 1537793979}
+    - target: {fileID: 1427643262741666426, guid: e805e2f07fda64a4d89d64304b58e550, type: 3}
+      propertyPath: disabledInteractorTypes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1427643262741666426, guid: e805e2f07fda64a4d89d64304b58e550, type: 3}
+      propertyPath: transformSmoothingLogicType.reference
+      value: MixedReality.Toolkit.SpatialManipulation.DefaultTransformSmoothingLogic,
+        MixedReality.Toolkit.SpatialManipulation
+      objectReference: {fileID: 0}
+    - target: {fileID: 1427643262741666426, guid: e805e2f07fda64a4d89d64304b58e550, type: 3}
+      propertyPath: manipulationLogicTypes.moveLogicType.reference
+      value: MixedReality.Toolkit.SpatialManipulation.MoveLogic, MixedReality.Toolkit.SpatialManipulation
+      objectReference: {fileID: 0}
+    - target: {fileID: 1427643262741666426, guid: e805e2f07fda64a4d89d64304b58e550, type: 3}
+      propertyPath: disabledInteractorTypes.Array.data[0].reference
+      value: MixedReality.Toolkit.IPokeInteractor, MixedReality.Toolkit.Core
+      objectReference: {fileID: 0}
+    - target: {fileID: 1427643262741666426, guid: e805e2f07fda64a4d89d64304b58e550, type: 3}
+      propertyPath: manipulationLogicTypes.scaleLogicType.reference
+      value: MixedReality.Toolkit.SpatialManipulation.ScaleLogic, MixedReality.Toolkit.SpatialManipulation
+      objectReference: {fileID: 0}
+    - target: {fileID: 1427643262741666426, guid: e805e2f07fda64a4d89d64304b58e550, type: 3}
+      propertyPath: manipulationLogicTypes.rotateLogicType.reference
+      value: MixedReality.Toolkit.SpatialManipulation.RotateLogic, MixedReality.Toolkit.SpatialManipulation
+      objectReference: {fileID: 0}
     - target: {fileID: 1427643263674758840, guid: e805e2f07fda64a4d89d64304b58e550, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1427643263674758840, guid: e805e2f07fda64a4d89d64304b58e550, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1673,13 +1715,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2481762325551611168, guid: 61a59ece36f1f904d91d3280007bffef, type: 3}
+      propertyPath: disabledInteractorTypes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481762325551611168, guid: 61a59ece36f1f904d91d3280007bffef, type: 3}
+      propertyPath: transformSmoothingLogicType.reference
+      value: MixedReality.Toolkit.SpatialManipulation.DefaultTransformSmoothingLogic,
+        MixedReality.Toolkit.SpatialManipulation
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481762325551611168, guid: 61a59ece36f1f904d91d3280007bffef, type: 3}
+      propertyPath: manipulationLogicTypes.moveLogicType.reference
+      value: MixedReality.Toolkit.SpatialManipulation.MoveLogic, MixedReality.Toolkit.SpatialManipulation
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481762325551611168, guid: 61a59ece36f1f904d91d3280007bffef, type: 3}
+      propertyPath: disabledInteractorTypes.Array.data[0].reference
+      value: MixedReality.Toolkit.IPokeInteractor, MixedReality.Toolkit.Core
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481762325551611168, guid: 61a59ece36f1f904d91d3280007bffef, type: 3}
+      propertyPath: manipulationLogicTypes.scaleLogicType.reference
+      value: MixedReality.Toolkit.SpatialManipulation.ScaleLogic, MixedReality.Toolkit.SpatialManipulation
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481762325551611168, guid: 61a59ece36f1f904d91d3280007bffef, type: 3}
+      propertyPath: manipulationLogicTypes.rotateLogicType.reference
+      value: MixedReality.Toolkit.SpatialManipulation.RotateLogic, MixedReality.Toolkit.SpatialManipulation
+      objectReference: {fileID: 0}
     - target: {fileID: 2481762325822996399, guid: 61a59ece36f1f904d91d3280007bffef, type: 3}
       propertyPath: Controller
       value: 
       objectReference: {fileID: 1537793979}
     - target: {fileID: 2481762326946428438, guid: 61a59ece36f1f904d91d3280007bffef, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2481762326946428438, guid: 61a59ece36f1f904d91d3280007bffef, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1746,9 +1813,34 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 259715464}
+    - target: {fileID: 6168490745372281926, guid: 4b5302b34082b3b4d8ef1d8ab93e94f6, type: 3}
+      propertyPath: disabledInteractorTypes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6168490745372281926, guid: 4b5302b34082b3b4d8ef1d8ab93e94f6, type: 3}
+      propertyPath: transformSmoothingLogicType.reference
+      value: MixedReality.Toolkit.SpatialManipulation.DefaultTransformSmoothingLogic,
+        MixedReality.Toolkit.SpatialManipulation
+      objectReference: {fileID: 0}
+    - target: {fileID: 6168490745372281926, guid: 4b5302b34082b3b4d8ef1d8ab93e94f6, type: 3}
+      propertyPath: manipulationLogicTypes.moveLogicType.reference
+      value: MixedReality.Toolkit.SpatialManipulation.MoveLogic, MixedReality.Toolkit.SpatialManipulation
+      objectReference: {fileID: 0}
+    - target: {fileID: 6168490745372281926, guid: 4b5302b34082b3b4d8ef1d8ab93e94f6, type: 3}
+      propertyPath: disabledInteractorTypes.Array.data[0].reference
+      value: MixedReality.Toolkit.IPokeInteractor, MixedReality.Toolkit.Core
+      objectReference: {fileID: 0}
+    - target: {fileID: 6168490745372281926, guid: 4b5302b34082b3b4d8ef1d8ab93e94f6, type: 3}
+      propertyPath: manipulationLogicTypes.scaleLogicType.reference
+      value: MixedReality.Toolkit.SpatialManipulation.ScaleLogic, MixedReality.Toolkit.SpatialManipulation
+      objectReference: {fileID: 0}
+    - target: {fileID: 6168490745372281926, guid: 4b5302b34082b3b4d8ef1d8ab93e94f6, type: 3}
+      propertyPath: manipulationLogicTypes.rotateLogicType.reference
+      value: MixedReality.Toolkit.SpatialManipulation.RotateLogic, MixedReality.Toolkit.SpatialManipulation
+      objectReference: {fileID: 0}
     - target: {fileID: 6168490745372281977, guid: 4b5302b34082b3b4d8ef1d8ab93e94f6, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6168490745372281977, guid: 4b5302b34082b3b4d8ef1d8ab93e94f6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1799,13 +1891,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8547495990183678851, guid: ced081ced3de1cd4f9c52bfb6a08b129, type: 3}
+      propertyPath: disabledInteractorTypes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8547495990183678851, guid: ced081ced3de1cd4f9c52bfb6a08b129, type: 3}
+      propertyPath: transformSmoothingLogicType.reference
+      value: MixedReality.Toolkit.SpatialManipulation.DefaultTransformSmoothingLogic,
+        MixedReality.Toolkit.SpatialManipulation
+      objectReference: {fileID: 0}
+    - target: {fileID: 8547495990183678851, guid: ced081ced3de1cd4f9c52bfb6a08b129, type: 3}
+      propertyPath: manipulationLogicTypes.moveLogicType.reference
+      value: MixedReality.Toolkit.SpatialManipulation.MoveLogic, MixedReality.Toolkit.SpatialManipulation
+      objectReference: {fileID: 0}
+    - target: {fileID: 8547495990183678851, guid: ced081ced3de1cd4f9c52bfb6a08b129, type: 3}
+      propertyPath: disabledInteractorTypes.Array.data[0].reference
+      value: MixedReality.Toolkit.IPokeInteractor, MixedReality.Toolkit.Core
+      objectReference: {fileID: 0}
+    - target: {fileID: 8547495990183678851, guid: ced081ced3de1cd4f9c52bfb6a08b129, type: 3}
+      propertyPath: manipulationLogicTypes.scaleLogicType.reference
+      value: MixedReality.Toolkit.SpatialManipulation.ScaleLogic, MixedReality.Toolkit.SpatialManipulation
+      objectReference: {fileID: 0}
+    - target: {fileID: 8547495990183678851, guid: ced081ced3de1cd4f9c52bfb6a08b129, type: 3}
+      propertyPath: manipulationLogicTypes.rotateLogicType.reference
+      value: MixedReality.Toolkit.SpatialManipulation.RotateLogic, MixedReality.Toolkit.SpatialManipulation
+      objectReference: {fileID: 0}
     - target: {fileID: 8547495991325874028, guid: ced081ced3de1cd4f9c52bfb6a08b129, type: 3}
       propertyPath: Table
       value: 
       objectReference: {fileID: 1843003675}
     - target: {fileID: 8547495991325874029, guid: ced081ced3de1cd4f9c52bfb6a08b129, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8547495991325874029, guid: ced081ced3de1cd4f9c52bfb6a08b129, type: 3}
       propertyPath: m_LocalPosition.x

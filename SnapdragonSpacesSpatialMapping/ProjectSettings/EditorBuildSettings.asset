@@ -9,5 +9,6 @@ EditorBuildSettings:
     path: Assets/SnapDragonSpacesSpatialMappings/Scenes/SnapdragonSpacesSpatialMapping.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 0393b33cc7be3d746af94c31f6d294a8, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d9cf560c5866be54da5532fa0338c088, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: bb8e327101a94a2468860340321f745a, type: 2}
